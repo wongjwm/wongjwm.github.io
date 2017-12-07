@@ -1,3 +1,42 @@
+/*
+.container {
+		position: relative;
+		width: 50%;
+	}*/
+
+/*  .image {
+    display: block;
+  }
+
+	.overlay {
+  		position: absolute;
+  		top: 0;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		height: 100%;
+  		width: 100%;
+  		opacity: 0;
+  		transition: .5s ease;
+ 		background-color: #008CBA;
+ 	}*/
+
+/*.container:hover .overlay {
+  opacity: 1;
+}*/
+
+.text {
+  color: black;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
 img {
 	width: 30%;
 	float: left;
@@ -27,5 +66,39 @@ a {
 	float: right;
 	font-size: 20px;
 	font-weight: 800;
+	color: black;
+	text-decoration: none; /* no underline */
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    padding: 20px;
+}
+
+
+
+h1 {
+	font-family: raleway;
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
 	text-transform: uppercase;
+	border-bottom: 2px solid #f1f1f1;
+	width: 30%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color:black;
+}
+
+
+h2 {
+	font-family: raleway;
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	text-transform: uppercase;
+	width: 30%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color:black;
 }
