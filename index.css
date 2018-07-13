@@ -1,107 +1,185 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Global */
 body {
-
-	margin: 0;
-	/* disable horizontal scroll*/
-	max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-/*    set background image*/
-   background-image:url(gradient1.jpg);
-   background-repeat:no-repeat;
-   background-size:cover;
-}
-
-
-img {
-	max-width: 100%;
-    height: auto;
-}
-
-
-.container {
-	position: relative;
-	width: 50%;
-}
-
-/*.overlay {
-  		position: absolute;
-  		top: 0;
-  		bottom: 0;
-  		left: 0;
-  		right: 0;
-  		height: 100%;
-  		width: 100%;
-  		opacity: 0;
-  		transition: .5s ease;
- 		background-color: #008CBA;
- }
-
-.container:hover .overlay {
-  opacity: 1;
-}*/
-
-
-h1 {
-	float: left;
 	font-family: raleway;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: 100%;
+	background: #eaf2f0;
+
+	/* animation */
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+
+a {
+	margin-right: 1.66%;
+	font-size: 25px;;
+	font-weight: 900;
+	color: #073442;
+	text-decoration: none; /* no underline */
+    padding: 20px;
+}
+
+a:hover {
+	/*background: #eee;*/
+ 	/*border-radius: 5px;*/
+ 	color: #a80f1e;
+ 	text-decoration: underline;
+ 	-moz-transition: all .2s ease-in;
+ 	-o-transition: all .2s ease-in;
+ 	-webkit-transition: all .2s ease-in;
+ 	transition: all .2s ease-in;
+}
+
+
+img { 
+	width: 75%;
+	float: right;
+	margin: 1.66%;
+	object-fit: cover;
+
+	/*max-width: 100%;
+    height: auto;
+    padding: 5px; */
+}
+
+/* NAV */ 
+nav {
+	position: fixed;
+	width: 100%;
+}
+
+nav a {
+	padding: 10px;
+	margin: 10px 30px;
+	display: inline-block;
+	float: right;
+}
+
+#active {
+	float: left;
 	margin-left: 1.66%;
 	font-size: 23px;
-	font-weight: 800;
 	text-transform: uppercase;
 	border-bottom: 2px solid #f1f1f1;
 	width: 30%;
-	padding-bottom: 10px;
-	color:white;
+	padding: 10px;
+	margin: 10px 30px;
+}
+
+#profile-pic {
+	max-width: 100%;
+    height: auto;
+   	border: none;
+   	background-color:none;
+	float: center;
+	padding-top: 40%
+}
+
+#projects {
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+	object-fit: cover;
+  	width: 425px;
+  	height: 425px;
+  	margin-top: 75px;
+
+  	/* BLUR EFFECT*/
+  	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+#projects:hover {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+/* FOOTER */
+footer {
+	bottom: 0;
+	padding-bottom: 25px;
+	text-align: center;
+	width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+.fixed-bottom {
+	position: fixed;
+}
+
+/* MAIN */
+main {
+	padding: 25px 15px;
+} 
+
+.title {
+	padding: 100px;
+}
+
+.links {
+	font-size: 25px;
+	color: black;
+	text-decoration: none; 
+} 
+
+.row {
+    display: flex;
+    padding: 5%;
+}
+
+.column {
+    flex: 50%;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 600;
+	color:black;
 }
 
 
 h2 {
-	font-family: raleway;
-	margin-left: 1.66%;
-	font-size: 30px;
-	font-weight: 400;
-	width: 30%;
+	font-size: 20px;
+	font-weight: 40;
 	padding-bottom: 20px;
-	color:white;
+	color:black;
 	margin-bottom: 0px;
+	width: 70%
 }
 
-p, span {
-	font-family: raleway;
+main p, span {
 	margin-left: 1.66%;
 	font-size: 50px;
 	font-weight: 800;
 	width: 30%;
 	padding-bottom: 0px;
-	color:white;
+	color:black;
 	margin-bottom: 0px;
 }
 
-img {
-	max-width: 100%;
-    height: auto;
-}
-
-
-a {
-	font-family: raleway;
-	margin-right: 1.66%;
-	float: right;
-	font-size: 20px;
-	font-weight: 800;
-	color: white;
-	text-decoration: none; /* no underline */
-	-moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-    padding: 20px;
-}
-
-a:hover {
- background: #eee;
- color:red;
+section {
+	padding-top: 5%
 }
 
 
@@ -111,7 +189,6 @@ p, h1, span {
         -ms-animation: fadein 2s; /* Internet Explorer */
             animation: fadein 2s;
 }
-
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -129,7 +206,3 @@ p, h1, span {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
-
-
-
