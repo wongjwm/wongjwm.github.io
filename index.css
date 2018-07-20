@@ -273,13 +273,28 @@ footer p {
 	font-family: 'Lato', serif;
 }
 
+.column a {
+	font-family: 'Lato', serif;
+	font-size: 18px;;
+	color: #073442;
+	text-decoration: underline;
+}
 
-.links {
-	font-size: 25px;;
-	font-weight: 800;
+
+.links a {
+	font-size: 25px;
+	font-weight: 900;
 	color: #073442;
 	text-decoration: none;
-} 
+	padding: 0px 10px;
+}
+
+.links a:hover {
+	font-size: 25px;
+	font-weight: 900;
+	color: #073442;
+	text-decoration: underline;
+}  
 
 /* Project Page*/
 .projectpage h1 {
